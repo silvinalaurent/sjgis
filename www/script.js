@@ -15,8 +15,8 @@ mapa.on('click', function (e) {
 
   L.marker([lat, lng])
     .addTo(mapa)
-    .bindPopup(`Marcador en:<br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}`)
+    .bindPopup(`Coordenadas:<br>Lat: ${lat.toFixed(5)}<br>Lng: ${lng.toFixed(5)}`)
     .openPopup();
 
-  console.log("Punto marcado:", lat, lng);
+  console.log("Coordenadas:", lat, lng);
 });
